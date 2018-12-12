@@ -1,0 +1,65 @@
+.spinHide {
+    animation: spinHide 500ms linear 0s forwards;
+}
+
+.spinShow {
+    animation: spinShow 500ms linear 0s forwards;
+}
+
+.darken {
+    animation: darkify 500ms linear 0s forwards;
+}
+
+/* Main Menu */
+.slideOn {
+    animation: slideOn 500ms ease-out 0s forwards;
+}
+
+@keyframes spinHide {
+    0% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@keyframes spinShow {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+}
+
+@keyframes darkify {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideOn {
+    0% {
+        right: calc(var(--menuWidth) * -1);
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes whiten {
+    0% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}

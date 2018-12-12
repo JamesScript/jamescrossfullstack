@@ -1,0 +1,54 @@
+.menu {
+    position: fixed;
+    font-size: 80px;
+    top: 3vh;
+    right: 3vw;
+    cursor: pointer;
+    user-select: none;
+    transform: rotate(0);
+    transform-origin: center;
+    text-align: center;
+    z-index: 300;
+    overflow-x: hidden;
+}
+
+#hamburger {
+    display: block;
+    opacity: 1;
+    padding: 5px 5px 15px 5px;
+}
+
+#closeHamburger {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    padding: 18px 19px 18px 19px;
+}
+
+#mainMenu {
+    position: fixed;
+    z-index: 250;
+    top: 0;
+    width: var(--menuWidth);
+    height: 100vh;
+    right: calc(var(--menuWidth) * -1);
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    font-size: x-large;
+    overflow: scroll;
+    font-family: 'Bree Serif', serif;
+    color: black;
+}
+
+.menuItem {
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    animation: whiten 500ms ease-out 0s forwards;
+}
+
+.showcaseLinks {
+    list-style: none;
+}

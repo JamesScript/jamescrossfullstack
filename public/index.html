@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>James Cross</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/topSection.css">
+    <link rel="stylesheet" href="stylesheets/animations.css">
+    <link rel="stylesheet" href="stylesheets/mainMenu.css">
+    <link rel="stylesheet" href="stylesheets/intro.css">
+    <script src="javascripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="firstImpression" class="fullPage">
+        <div id="nameContainer">
+            <h1 id="myName">James Cross</h1>
+        </div>
+        <img id="mePic" src="images/meStPeters.jpeg">
+    </div>
+    <div onclick="menu()" class="menu" id="hamburger">&#9776;</div>
+    <div onclick="menu()" class="menu" id="closeHamburger">&times;</div>
+    <div id="mainMenu">
+        <h1 class="menuItem">Developer Showcase:</h1>
+        <ul class="showcaseLinks">
+            <li class="menuItem">Front End Web Design</li>
+            <li class="menuItem">Full Stack Web Apps</li>
+            <li class="menuItem">Games</li>
+            <li class="menuItem">Audio Visualisation</li>
+            <li class="menuItem">Data Visualisation</li>
+            <li class="menuItem">Art and Animation</li>
+        </ul>
+        <h1 class="menuItem">Technology:</h1>
+        <ul class="showcaseLinks">
+            <li class="menuItem">JavaScript</li>
+            <li class="menuItem">Node & Express</li>
+            <li class="menuItem">React</li>
+            <li class="menuItem">p5</li>
+            <li class="menuItem">Matter (Physics Engine)</li>
+            <li class="menuItem">THREE</li>
+            <li class="menuItem">D3</li>
+            <li class="menuItem">Pug</li>
+            <li class="menuItem">Java (Processing)</li>
+            <li class="menuItem">C++</li>
+        </ul>
+        <h1 class="menuItem">Links:</h1>
+        <ul class="showcaseLinks">
+            <li class="menuItem"><a href="https://github.com/crossjames934">GitHub</a></li>
+            <li class="menuItem">Codepen</li>
+            <li class="menuItem">Glitch</li>
+            <li class="menuItem">Heroku</li>
+            <li class="menuItem">LinkedIn</li>
+        </ul>
+        <h1 class="menuItem">Personal:</h1>
+        <ul class="showcaseLinks">
+            <li class="menuItem">Music</li>
+            <li class="menuItem">About Me</li>
+            <li class="menuItem">Contact</li>
+        </ul>
+    </div>
+    <div id="intro" class="fullPage">
+        <div id="introPanel">
+            <div class="panelContent">
+                <div class="leftSide">
+                    <h1>Welcome To My Website!</h1>
+                    <p>I am a passionate web developer and programmer located in London, UK.</p>
+                    <p>Feel free to peruse my vast variety of work which includes:</p>
+                    <ul>
+                        <li>Games</li>
+                        <li>Web Design</li>
+                        <li>Full Stack Web Applications</li>
+                        <li>Audio Visualisation</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+                <div class="rightSide">
+                    <img id="bubbleJames" src="images/jcBubbleLetters.gif" alt="My name animated with p5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="darkenScreen"></div>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
